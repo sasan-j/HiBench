@@ -35,6 +35,11 @@ HIVE_HOME=`printenv HIVE_HOME`
 MAHOUT_HOME=`printenv MAHOUT_HOME`
 NUTCH_HOME=`printenv NUTCH_HOME`
 DATATOOLS=`printenv DATATOOLS`
+#added to avoid and error for pagerank unbound
+TEMP_HDFS=`printenv TEMP_HDFS`
+VSIZE=`printenv VSIZE`
+#TEMP_HDFS=`printenv TEMP_HDFS`
+
 
 if [ -n "$HADOOP_HOME" ]; then
 	HADOOP_EXECUTABLE=$HADOOP_HOME/bin/hadoop
